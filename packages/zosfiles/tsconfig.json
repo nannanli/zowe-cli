@@ -14,26 +14,24 @@
     "removeComments": false,
     "pretty": true,
     "sourceMap": true,
-    "newLine": "lf"
+    "newLine": "lf",
+    "composite": true,
+    "rootDir": "../../packages"
   },
   "include": [
-    "packages/**/*"
+    "**/*",
+    "../rest/**/*",
+    "../utils/**/*",
   ],
   "exclude": [
     "lib",
     "node_modules",
+    // don't build CLI code
+    "**/src/cli/*",
     "**/__mocks__/*",
     "**/__tests__/*",
     "**/*.spec.ts",
     "**/*-spec.ts",
     "**/*.test.ts"
-  ],
-  "references": [
-    {
-      "path": "./packages/zosfiles"
-    },
-    {
-      "path": "./packages/zosjobs"
-    }
   ]
 }

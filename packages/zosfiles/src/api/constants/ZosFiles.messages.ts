@@ -569,5 +569,34 @@ export const ZosFilesMessages: { [key: string]: IMessageDefinition } = {
      */
     memberDownloadFailed: {
         message: "Failed to download the following members: \n"
+    },
+
+    /**
+     * Message indicating which attributes are used during creation
+     * @type {IMessageDefinition}
+     */
+    attributeTitle: {
+        message: "The following attributes are used during creation:\n"
+    },
+
+    /**
+     * @type {IMessageDefinition}
+     */
+    for: {
+        message: "for"
+    },
+
+    /**
+     * @type {IMessageDefinition}
+     */
+    to: {
+        message: "to"
+    },
+
+    /**
+     * @type {IMessageDefinition}
+     */
+    withValue: {
+        message: "with value"
     }
 };

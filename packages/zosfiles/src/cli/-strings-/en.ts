@@ -13,12 +13,6 @@ import { TextUtils } from "@zowe/imperative";
 import { Constants } from "../../../../Constants";
 
 export default {
-    COMMON: {
-        ATTRIBUTE_TITLE: "The following attributes are used during creation:\n",
-        FOR: "for",
-        TO: "to",
-        WITH_VALUE: "with value"
-    },
     CREATE: {
         DESCRIPTION: "Create data sets",
         ACTIONS: {

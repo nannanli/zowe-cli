@@ -1,0 +1,33 @@
+{
+  "name": "@zowe/zos-jobs-sdk",
+  "version": "1.0.0",
+  "description": "Zowe Node.js SDK for z/OS batch jobs (using z/OSMF Jobs REST endpoints).",
+  "author": "Broadcom",
+  "license": "EPL-2.0",
+  "keywords": [
+    "zosmf",
+    "mainframe",
+    "CLI",
+    "zos",
+    "jobs",
+    "jcl",
+    "z/OSMF",
+    "mvs",
+    "os390",
+    "z/OS",
+    "zowe"
+  ],
+  "main": "packages/zosjobs/index.js",
+  "typings": "packages/zosjobs/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@zowe/imperative": "4.7.3",
+    "get-stdin": "7.0.0",
+    "string-width": "2.1.1"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.3"
+  }
+}

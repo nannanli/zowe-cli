@@ -1,0 +1,13 @@
+{
+  "packages": [
+    "src"
+  ],
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "**/__tests__/**",
+        "**/cli/**"
+      ]
+    }
+  }
+}

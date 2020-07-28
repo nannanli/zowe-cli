@@ -1,0 +1,33 @@
+{
+  "name": "@zowe/zos-files-sdk",
+  "version": "1.0.0",
+  "description": "Zowe Node.js SDK for z/OS data sets and USS files (using z/OSMF Files REST endpoints).",
+  "author": "Broadcom",
+  "license": "EPL-2.0",
+  "keywords": [
+    "zosmf",
+    "mainframe",
+    "CLI",
+    "zos",
+    "jobs",
+    "jcl",
+    "z/OSMF",
+    "mvs",
+    "os390",
+    "z/OS",
+    "zowe"
+  ],
+  "main": "packages/zosfiles/index.js",
+  "typings": "packages/zosfiles/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@zowe/imperative": "4.7.3",
+    "minimatch": "3.0.4",
+    "string-width": "2.1.1"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.3"
+  }
+}
