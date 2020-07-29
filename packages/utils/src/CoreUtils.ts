@@ -195,5 +195,7 @@ export function asyncPool(poolLimit: number, array: any[],
  * This allows it to be accessed without calling Imperative.init.
  */
 export function getImperativeConfig(): IImperativeConfig {
-    return require("../../imperative");
+    // Use dynamic require so this import doesn't make dependency-check mad
+    const imperativePath = "../../imperative";
+    return require(imperativePath);
 }

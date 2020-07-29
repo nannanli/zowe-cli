@@ -17,8 +17,8 @@
     "z/OS",
     "zowe"
   ],
-  "main": "packages/zosfiles/index.js",
-  "typings": "packages/zosfiles/index.d.ts",
+  "main": "lib/zosfiles/index.js",
+  "typings": "lib/zosfiles/index.d.ts",
   "files": [
     "lib"
   ],
