@@ -1,12 +1,12 @@
 {
   "packages": [
-    "src"
+    "packages/*"
   ],
+  "version": "6.19.1",
   "command": {
     "publish": {
       "ignoreChanges": [
-        "**/__tests__/**",
-        "**/cli/**"
+        "**/__tests__/**"
       ]
     }
   }

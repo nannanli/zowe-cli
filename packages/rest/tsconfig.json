@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib",
+    "composite": true
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "@types/minimatch": "^3.0.3",
+    "@types/node": "^12.12.24",
+    "rimraf": "^2.6.3",
+    "typescript": "^3.8.0"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "@zowe/zos-files-sdk",
+  "name": "@zowe/zos-files-for-zowe-sdk",
   "version": "1.0.0",
   "description": "Zowe Node.js SDK for z/OS data sets and USS files (using z/OSMF Files REST endpoints).",
   "author": "Broadcom",
@@ -17,17 +17,26 @@
     "z/OS",
     "zowe"
   ],
-  "main": "lib/zosfiles/index.js",
-  "typings": "lib/zosfiles/index.d.ts",
   "files": [
     "lib"
   ],
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc --pretty",
+    "watch": "tsc --pretty --watch",
+    "clean": "rimraf lib"
+  },
   "dependencies": {
-    "@zowe/imperative": "4.7.3",
+    "@zowe/imperative": "4.7.4",
     "minimatch": "3.0.4",
     "string-width": "2.1.1"
   },
   "devDependencies": {
-    "rimraf": "^2.6.3"
+    "@types/jest": "^22.2.3",
+    "@types/minimatch": "^3.0.3",
+    "@types/node": "^12.12.24",
+    "rimraf": "^2.6.3",
+    "typescript": "^3.8.0"
   }
 }

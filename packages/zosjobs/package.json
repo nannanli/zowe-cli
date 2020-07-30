@@ -1,5 +1,5 @@
 {
-  "name": "@zowe/zos-jobs-sdk",
+  "name": "@zowe/zos-jobs-for-zowe-sdk",
   "version": "1.0.0",
   "description": "Zowe Node.js SDK for z/OS batch jobs (using z/OSMF Jobs REST endpoints).",
   "author": "Broadcom",
@@ -17,17 +17,25 @@
     "z/OS",
     "zowe"
   ],
-  "main": "lib/zosjobs/index.js",
-  "typings": "lib/zosjobs/index.d.ts",
   "files": [
     "lib"
   ],
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc --pretty",
+    "watch": "tsc --pretty --watch",
+    "clean": "rimraf lib"
+  },
   "dependencies": {
-    "@zowe/imperative": "4.7.3",
+    "@zowe/imperative": "4.7.4",
     "get-stdin": "7.0.0",
     "string-width": "2.1.1"
   },
   "devDependencies": {
-    "rimraf": "^2.6.3"
+    "@types/jest": "^22.2.3",
+    "@types/node": "^12.12.24",
+    "rimraf": "^2.6.3",
+    "typescript": "^3.8.0"
   }
 }

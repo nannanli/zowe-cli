@@ -1,37 +1,15 @@
 {
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "types": [
-      "node",
-      "jest"
-    ],
-    "target": "es2015",
-    "module": "commonjs",
-    "declaration": true,
-    "moduleResolution": "node",
-    "noImplicitAny": true,
-    "outDir": "./lib",
-    "preserveConstEnums": true,
-    "removeComments": false,
-    "pretty": true,
-    "sourceMap": true,
-    "newLine": "lf",
-    "composite": true,
-    "rootDir": "../../packages"
+    "rootDir": "src",
+    "outDir": "lib"
   },
-  "include": [
-    "**/*",
-    "../rest/**/*",
-    "../utils/**/*",
-  ],
-  "exclude": [
-    "lib",
-    "node_modules",
-    // don't build CLI code
-    "**/src/cli/*",
-    "**/__mocks__/*",
-    "**/__tests__/*",
-    "**/*.spec.ts",
-    "**/*-spec.ts",
-    "**/*.test.ts"
+  "references": [
+    {
+      "path": "../rest"
+    },
+    {
+      "path": "../utils"
+    }
   ]
 }

@@ -1,0 +1,40 @@
+{
+  "name": "@zowe/zosmf-for-zowe-sdk",
+  "version": "1.0.0",
+  "description": "Zowe Node.js SDK for interacting with the z/OS Management Facility (using z/OSMF REST endpoints).",
+  "author": "Broadcom",
+  "license": "EPL-2.0",
+  "keywords": [
+    "zosmf",
+    "mainframe",
+    "CLI",
+    "zos",
+    "jobs",
+    "jcl",
+    "z/OSMF",
+    "mvs",
+    "os390",
+    "z/OS",
+    "zowe"
+  ],
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc --pretty",
+    "watch": "tsc --pretty --watch",
+    "clean": "rimraf lib"
+  },
+  "dependencies": {
+    "@zowe/imperative": "4.7.4",
+    "string-width": "2.1.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "@types/node": "^12.12.24",
+    "rimraf": "^2.6.3",
+    "typescript": "^3.8.0"
+  }
+}
